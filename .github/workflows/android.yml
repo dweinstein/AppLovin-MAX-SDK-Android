@@ -27,10 +27,10 @@ jobs:
       - name: List artifacts
         run: find . -name '*.apk'
 
-      # - name: Upload application
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: app
-      #     path: ./app/build/outputs/apk/insecure/debug/app-insecure-debug.apk
-      #     retention-days: 3
+      - name: Upload application
+        uses: actions/upload-artifact@v2
+        with:
+          name: app
+          path: ./"AppLovin MAX Demo App - Java"/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 3
 
