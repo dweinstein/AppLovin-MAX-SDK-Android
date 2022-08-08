@@ -22,10 +22,10 @@ jobs:
         uses: gradle/wrapper-validation-action@v1
 
       - name: Build application
-        run: ./gradlew assembleDebug --stacktrace --no-daemon
+        run: cd ./"AppLovin MAX Demo App - Java" && ./gradlew assembleDebug --stacktrace --no-daemon
 
       - name: List artifacts
-        run: find ./app -name '*.apk'
+        run: find . -name '*.apk'
 
       # - name: Upload application
       #   uses: actions/upload-artifact@v2
