@@ -81,6 +81,7 @@ jobs:
           report_id: ${{ needs.scan.outputs.report_id }}
           token: ${{ secrets.NS_TOKEN }}
           group_id: "38a6ce91-7920-493d-958a-b912e1bdb506"
+          enable_dependencies: true
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
