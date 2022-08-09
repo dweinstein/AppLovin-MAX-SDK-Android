@@ -28,7 +28,7 @@ jobs:
       timeout-minutes: 60
       with:
         token: ${{ secrets.NS_TOKEN }}
-        report_id: ${{ inputs.name }}
+        report_id: ${{ inputs.report_id }}
         group_id: "38a6ce91-7920-493d-958a-b912e1bdb506"
         enable_dependencies: false
         enable_sarif: true
@@ -50,7 +50,7 @@ jobs:
       timeout-minutes: 60
       with:
         token: ${{ secrets.NS_TOKEN }}
-        report_id: ${{ inputs.name }}
+        report_id: ${{ inputs.report_id }}
         group_id: "38a6ce91-7920-493d-958a-b912e1bdb506"
         enable_dependencies: true
         enable_sarif: false
